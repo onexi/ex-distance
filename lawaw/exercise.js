@@ -19,7 +19,7 @@ exercise.findClosest = function(k,data){
     data.sort(function(a, b){
         return a.distance - b.distance;
     });
-    var points = data.slice(0, 3);
+    var points = data.slice(0, k);
     return points;
 };
 
